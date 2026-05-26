@@ -21,7 +21,6 @@
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
-/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/Microsoft.Extensions.Logging.dll
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
@@ -42,7 +41,6 @@
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/System.Collections.Immutable.dll
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/System.Diagnostics.DiagnosticSource.dll
-/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/System.Diagnostics.EventLog.dll
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/System.Text.Encodings.Web.dll
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/System.Text.Json.dll
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/xunit.abstractions.dll
@@ -136,8 +134,6 @@
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/runtimes/win-arm64/native/e_sqlite3.dll
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/runtimes/win-x64/native/e_sqlite3.dll
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/runtimes/win-x86/native/e_sqlite3.dll
-/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll
-/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/CarparkInfo.Domain.dll
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/CarparkInfo.Infrastructure.dll
@@ -153,3 +149,15 @@
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/obj/Debug/net6.0/ref/CarparkInfo.Tests.dll
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/obj/Debug/net6.0/CarparkInfo.Tests.pdb
 /Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/obj/Debug/net6.0/CarparkInfo.Tests.genruntimeconfig.cache
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/CarparkInfo.Api.deps.json
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/CarparkInfo.Api.runtimeconfig.json
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/appsettings.Development.json
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/appsettings.json
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/CarparkInfo.Api
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/CarparkInfo.Api.dll
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/CarparkInfo.Api.pdb
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/bin/Debug/net6.0/CarparkInfo.Api.xml

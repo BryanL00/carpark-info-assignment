@@ -4,6 +4,80 @@
     "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/CarparkInfo.Tests.csproj": {}
   },
   "projects": {
+    "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Api/CarparkInfo.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Api/CarparkInfo.Api.csproj",
+        "projectName": "CarparkInfo.Api",
+        "projectPath": "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Api/CarparkInfo.Api.csproj",
+        "packagesPath": "/Users/bryanlee/.nuget/packages/",
+        "outputPath": "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bryanlee/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Domain/CarparkInfo.Domain.csproj": {
+                "projectPath": "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Domain/CarparkInfo.Domain.csproj"
+              },
+              "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/CarparkInfo.Infrastructure.csproj": {
+                "projectPath": "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/CarparkInfo.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.*, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet@6/6.0.136_1/libexec/sdk/6.0.136/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Domain/CarparkInfo.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -144,6 +218,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Api/CarparkInfo.Api.csproj": {
+                "projectPath": "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Api/CarparkInfo.Api.csproj"
+              },
               "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Domain/CarparkInfo.Domain.csproj": {
                 "projectPath": "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Domain/CarparkInfo.Domain.csproj"
               },
@@ -164,6 +241,10 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.*, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[6.*, )"
             },
