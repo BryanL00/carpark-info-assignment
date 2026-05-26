@@ -1,0 +1,15 @@
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/bin/Debug/net6.0/CarparkInfo.Infrastructure.deps.json
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/bin/Debug/net6.0/CarparkInfo.Infrastructure.dll
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/bin/Debug/net6.0/ref/CarparkInfo.Infrastructure.dll
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/bin/Debug/net6.0/CarparkInfo.Infrastructure.pdb
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/bin/Debug/net6.0/CarparkInfo.Domain.dll
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/bin/Debug/net6.0/CarparkInfo.Domain.pdb
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/obj/Debug/net6.0/CarparkInfo.Infrastructure.csproj.AssemblyReference.cache
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/obj/Debug/net6.0/CarparkInfo.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/obj/Debug/net6.0/CarparkInfo.Infrastructure.AssemblyInfoInputs.cache
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/obj/Debug/net6.0/CarparkInfo.Infrastructure.AssemblyInfo.cs
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/obj/Debug/net6.0/CarparkInfo.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/obj/Debug/net6.0/CarparkInfo.Infrastructure.csproj.CopyComplete
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/obj/Debug/net6.0/CarparkInfo.Infrastructure.dll
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/obj/Debug/net6.0/ref/CarparkInfo.Infrastructure.dll
+/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/obj/Debug/net6.0/CarparkInfo.Infrastructure.pdb

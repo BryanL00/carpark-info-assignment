@@ -1,0 +1,215 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/CarparkInfo.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Domain/CarparkInfo.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Domain/CarparkInfo.Domain.csproj",
+        "projectName": "CarparkInfo.Domain",
+        "projectPath": "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Domain/CarparkInfo.Domain.csproj",
+        "packagesPath": "/Users/bryanlee/.nuget/packages/",
+        "outputPath": "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bryanlee/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet@6/6.0.136_1/libexec/sdk/6.0.136/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/CarparkInfo.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/CarparkInfo.Infrastructure.csproj",
+        "projectName": "CarparkInfo.Infrastructure",
+        "projectPath": "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/CarparkInfo.Infrastructure.csproj",
+        "packagesPath": "/Users/bryanlee/.nuget/packages/",
+        "outputPath": "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bryanlee/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Domain/CarparkInfo.Domain.csproj": {
+                "projectPath": "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Domain/CarparkInfo.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[33.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet@6/6.0.136_1/libexec/sdk/6.0.136/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/CarparkInfo.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/CarparkInfo.Tests.csproj",
+        "projectName": "CarparkInfo.Tests",
+        "projectPath": "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/CarparkInfo.Tests.csproj",
+        "packagesPath": "/Users/bryanlee/.nuget/packages/",
+        "outputPath": "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bryanlee/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Domain/CarparkInfo.Domain.csproj": {
+                "projectPath": "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Domain/CarparkInfo.Domain.csproj"
+              },
+              "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/CarparkInfo.Infrastructure.csproj": {
+                "projectPath": "/Users/bryanlee/carpark-info-assignment/CarparkInfo.Infrastructure/CarparkInfo.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.*, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet@6/6.0.136_1/libexec/sdk/6.0.136/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

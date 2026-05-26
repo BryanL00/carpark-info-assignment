@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CarparkInfo.Api</name>
+    </assembly>
+    <members>
+        <member name="M:CarparkInfo.Api.Controllers.BatchController.Import(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Imports carpark data from a CSV file. Atomically replaces all existing carpark records.
+            If any row in the file is invalid, the entire import is rolled back.
+            </summary>
+            <param name="file">The CSV file to import (must match the HDB carpark information format).</param>
+        </member>
+        <member name="M:CarparkInfo.Api.Controllers.CarParksController.GetAll(System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Decimal})">
+            <summary>
+            Returns a list of carparks, optionally filtered by free parking, night parking, and vehicle height.
+            </summary>
+            <param name="freeParking">Set to true to return only carparks that offer free parking.</param>
+            <param name="nightParking">Set to true to return only carparks that allow night parking.</param>
+            <param name="vehicleHeight">Return only carparks whose gantry height is greater than or equal to this value (in metres).</param>
+        </member>
+        <member name="M:CarparkInfo.Api.Controllers.CarParksController.GetById(System.String)">
+            <summary>
+            Returns the details of a single carpark by its carpark number.
+            </summary>
+            <param name="id">The unique carpark number (e.g. ACB).</param>
+        </member>
+        <member name="M:CarparkInfo.Api.Controllers.FavouritesController.GetFavourites(System.Guid)">
+            <summary>
+            Returns all carparks saved as favourites by the specified user.
+            </summary>
+            <param name="userId">The unique identifier of the user.</param>
+        </member>
+        <member name="M:CarparkInfo.Api.Controllers.FavouritesController.AddFavourite(System.Guid,CarparkInfo.Api.Dtos.AddFavouriteRequest)">
+            <summary>
+            Adds a carpark to the specified user's favourites list.
+            </summary>
+            <param name="userId">The unique identifier of the user.</param>
+            <param name="request">Request body containing the carpark number to favourite.</param>
+        </member>
+        <member name="M:CarparkInfo.Api.Controllers.FavouritesController.RemoveFavourite(System.Guid,System.String)">
+            <summary>
+            Removes a carpark from the specified user's favourites list.
+            </summary>
+            <param name="userId">The unique identifier of the user.</param>
+            <param name="carParkNo">The carpark number to remove.</param>
+        </member>
+    </members>
+</doc>
