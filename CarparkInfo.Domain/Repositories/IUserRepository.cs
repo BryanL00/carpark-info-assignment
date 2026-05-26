@@ -4,6 +4,6 @@ namespace CarparkInfo.Domain.Repositories;
 
 public interface IUserRepository
 {
-    Task<User?> GetByIdAsync(Guid userId);
-    Task<User> GetOrCreateAsync(Guid userId);
+    Task<User?> GetByIdAsync(int userId);
+    Task<User> GetOrCreateAsync(int userId);
 }

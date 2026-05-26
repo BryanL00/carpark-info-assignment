@@ -11,7 +11,7 @@ public class UserFavouriteRepository : IUserFavouriteRepository
 
     public UserFavouriteRepository(AppDbContext db) => _db = db;
 
-    public async Task<IEnumerable<UserFavourite>> GetByUserIdAsync(Guid userId) =>
+    public async Task<IEnumerable<UserFavourite>> GetByUserIdAsync(int userId) =>
         await _db.UserFavourites
             .Include(f => f.CarPark)
                 .ThenInclude(c => c.CarParkType)
@@ -20,7 +20,7 @@ public class UserFavouriteRepository : IUserFavouriteRepository
             .Where(f => f.UserId == userId)
             .ToListAsync();
 
-    public async Task<bool> ExistsAsync(Guid userId, string carParkNo) =>
+    public async Task<bool> ExistsAsync(int userId, string carParkNo) =>
         await _db.UserFavourites.AnyAsync(f => f.UserId == userId && f.CarParkNo == carParkNo);
 
     public async Task AddAsync(UserFavourite favourite)
@@ -29,7 +29,7 @@ public class UserFavouriteRepository : IUserFavouriteRepository
         await _db.SaveChangesAsync();
     }
 
-    public async Task RemoveAsync(Guid userId, string carParkNo)
+    public async Task RemoveAsync(int userId, string carParkNo)
     {
         var favourite = await _db.UserFavourites
             .FirstOrDefaultAsync(f => f.UserId == userId && f.CarParkNo == carParkNo);

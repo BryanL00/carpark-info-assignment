@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarparkInfo.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260526035707_InitialCreate")]
+    [Migration("20260526063612_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -119,9 +119,9 @@ namespace CarparkInfo.Infrastructure.Migrations
 
             modelBuilder.Entity("CarparkInfo.Domain.Entities.User", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Username")
                         .IsRequired()
@@ -135,8 +135,8 @@ namespace CarparkInfo.Infrastructure.Migrations
 
             modelBuilder.Entity("CarparkInfo.Domain.Entities.UserFavourite", b =>
                 {
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("UserId")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("CarParkNo")
                         .HasColumnType("TEXT");

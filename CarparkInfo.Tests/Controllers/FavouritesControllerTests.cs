@@ -16,7 +16,7 @@ public class FavouritesControllerTests
     private readonly Mock<IUserRepository> _mockUserRepo = new();
     private readonly FavouritesController _controller;
 
-    private static readonly Guid UserId = Guid.NewGuid();
+    private const int UserId = 1;
     private const string CarParkNo = "ACB";
 
     public FavouritesControllerTests()
@@ -48,7 +48,7 @@ public class FavouritesControllerTests
         var carPark = MakeCarPark(CarParkNo);
         _mockCarParkRepo.Setup(r => r.GetByIdAsync(CarParkNo)).ReturnsAsync(carPark);
         _mockFavRepo.Setup(r => r.ExistsAsync(UserId, CarParkNo)).ReturnsAsync(false);
-        _mockUserRepo.Setup(r => r.GetOrCreateAsync(UserId)).ReturnsAsync(new User { Id = UserId });
+        _mockUserRepo.Setup(r => r.GetOrCreateAsync(UserId)).ReturnsAsync(new User { Id = UserId, Username = "1" });
         _mockFavRepo.Setup(r => r.AddAsync(It.IsAny<UserFavourite>())).Returns(Task.CompletedTask);
 
         var result = await _controller.AddFavourite(UserId, new AddFavouriteRequest { CarParkNo = CarParkNo });

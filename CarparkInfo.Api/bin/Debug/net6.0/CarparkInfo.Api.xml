@@ -25,20 +25,20 @@
             </summary>
             <param name="id">The unique carpark number (e.g. ACB).</param>
         </member>
-        <member name="M:CarparkInfo.Api.Controllers.FavouritesController.GetFavourites(System.Guid)">
+        <member name="M:CarparkInfo.Api.Controllers.FavouritesController.GetFavourites(System.Int32)">
             <summary>
             Returns all carparks saved as favourites by the specified user.
             </summary>
             <param name="userId">The unique identifier of the user.</param>
         </member>
-        <member name="M:CarparkInfo.Api.Controllers.FavouritesController.AddFavourite(System.Guid,CarparkInfo.Api.Dtos.AddFavouriteRequest)">
+        <member name="M:CarparkInfo.Api.Controllers.FavouritesController.AddFavourite(System.Int32,CarparkInfo.Api.Dtos.AddFavouriteRequest)">
             <summary>
             Adds a carpark to the specified user's favourites list.
             </summary>
             <param name="userId">The unique identifier of the user.</param>
             <param name="request">Request body containing the carpark number to favourite.</param>
         </member>
-        <member name="M:CarparkInfo.Api.Controllers.FavouritesController.RemoveFavourite(System.Guid,System.String)">
+        <member name="M:CarparkInfo.Api.Controllers.FavouritesController.RemoveFavourite(System.Int32,System.String)">
             <summary>
             Removes a carpark from the specified user's favourites list.
             </summary>

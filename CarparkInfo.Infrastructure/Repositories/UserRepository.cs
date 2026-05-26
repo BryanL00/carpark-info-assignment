@@ -11,10 +11,10 @@ public class UserRepository : IUserRepository
 
     public UserRepository(AppDbContext db) => _db = db;
 
-    public async Task<User?> GetByIdAsync(Guid userId) =>
+    public async Task<User?> GetByIdAsync(int userId) =>
         await _db.Users.FindAsync(userId);
 
-    public async Task<User> GetOrCreateAsync(Guid userId)
+    public async Task<User> GetOrCreateAsync(int userId)
     {
         var user = await _db.Users.FindAsync(userId);
         if (user is not null) return user;

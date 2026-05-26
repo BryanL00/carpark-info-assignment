@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CarparkInfo.Api.Controllers;
 
 [ApiController]
-[Route("api/users/{userId:guid}/favourites")]
+[Route("api/users/{userId:int}/favourites")]
 public class FavouritesController : ControllerBase
 {
     private readonly IUserFavouriteRepository _favouriteRepo;
@@ -29,7 +29,7 @@ public class FavouritesController : ControllerBase
     /// <param name="userId">The unique identifier of the user.</param>
     [HttpGet]
     [ProducesResponseType(typeof(IEnumerable<UserFavouriteDto>), StatusCodes.Status200OK)]
-    public async Task<IActionResult> GetFavourites(Guid userId)
+    public async Task<IActionResult> GetFavourites(int userId)
     {
         var favourites = await _favouriteRepo.GetByUserIdAsync(userId);
         return Ok(favourites.Select(UserFavouriteDto.From));
@@ -44,7 +44,7 @@ public class FavouritesController : ControllerBase
     [ProducesResponseType(typeof(UserFavouriteDto), StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status409Conflict)]
-    public async Task<IActionResult> AddFavourite(Guid userId, [FromBody] AddFavouriteRequest request)
+    public async Task<IActionResult> AddFavourite(int userId, [FromBody] AddFavouriteRequest request)
     {
         var carPark = await _carParkRepo.GetByIdAsync(request.CarParkNo);
         if (carPark is null)
@@ -79,7 +79,7 @@ public class FavouritesController : ControllerBase
     [HttpDelete("{carParkNo}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<IActionResult> RemoveFavourite(Guid userId, string carParkNo)
+    public async Task<IActionResult> RemoveFavourite(int userId, string carParkNo)
     {
         if (!await _favouriteRepo.ExistsAsync(userId, carParkNo))
             return NotFound($"Carpark '{carParkNo}' is not in your favourites.");
